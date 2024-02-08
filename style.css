@@ -7,7 +7,7 @@ blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none
 table { border-collapse: collapse; border-spacing: 0;}
 
 :root {
-    --background-color: #d4d4d4;
+    --background-color: #737373;
     --main-color: #2c5d63;
     --highlight-color: #a2c11c;
 }
@@ -24,7 +24,7 @@ table { border-collapse: collapse; border-spacing: 0;}
 #searchbar {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: aquamarine;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 10fr 2fr 1fr 1fr 2fr;
     grid-template-rows: 1fr;
@@ -73,28 +73,28 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 #big-name {
     grid-column: 2 / 3;
-    background-color: greenyellow;
+    background-color: green;
 }
 
 #new {
     grid-column: 4 / 5;
-    background-color: greenyellow;
+    background-color: var(--main-color);
 }
 
 #upload {
     grid-column: 5 / 6;
-    background-color: greenyellow;
+    background-color: var(--main-color);
 }
 
 #share {
     grid-column: 6 / 7;
-    background-color: greenyellow;
+    background-color: var(--main-color);
 }
 
 #sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    background-color: aqua;
+    background-color: var(--main-color);
     display: grid;
     grid-template-rows: 1fr 4fr 2fr 4fr;
     grid-template-columns: 1fr;
@@ -110,7 +110,6 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 #nav {
     grid-row: 2 / 3;
-    background-color: blue;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -119,7 +118,6 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 #tools {
     grid-row: 3 / 4;
-    background-color: blue;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -137,7 +135,7 @@ table { border-collapse: collapse; border-spacing: 0;}
 #body {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    background-color: lightgrey;
+    background-color: var(--background-color);
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
@@ -150,17 +148,16 @@ table { border-collapse: collapse; border-spacing: 0;}
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-    background-color: gray;
     gap: 15px;
 }
 
 .card {
-    background-color: antiquewhite;
+    background-color: white;
+    border-left: 10px solid var(--highlight-color);
 }
 
 #right-container {
     grid-column: 2 / 3;
-    background-color: blanchedalmond;
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
@@ -168,7 +165,7 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 #announcements {
     grid-row: 1 / 2;
-    background-color: darkcyan;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -182,7 +179,7 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 #trending {
     grid-row: 2 / 3;
-    background-color: darkkhaki;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
