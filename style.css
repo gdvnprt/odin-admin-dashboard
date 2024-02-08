@@ -22,6 +22,33 @@
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     background-color: aqua;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 4fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 15px;
+    color: white;
+}
+
+#dashboard {
+    grid-row: 1 / 2;
+}
+
+#nav {
+    grid-row: 2 / 3;
+    background-color: blue;
+    gap: 10px;
+}
+
+#tools {
+    grid-row: 3 / 4;
+    background-color: blue;
+    gap: 10px;
+}
+
+.sidebar-segment {
+    height: 2vh;
+    background-color: lightseagreen;
 }
 
 #body {
