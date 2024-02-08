@@ -28,4 +28,40 @@
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1vw 2vh 2vw 1vh;
+    gap: 10px;
+}
+
+#card-container {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    background-color: gray;
+    gap: 15px;
+}
+
+.card {
+    background-color: antiquewhite;
+}
+
+#right-container {
+    grid-column: 2 / 3;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+#announcements {
+    grid-row: 1 / 2;
+    background-color: darkcyan;
+}
+
+#trending {
+    grid-row: 2 / 3;
+    background-color: darkkhaki;
 }
