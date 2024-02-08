@@ -32,23 +32,33 @@
 
 #dashboard {
     grid-row: 1 / 2;
+    font-size: 2rem;
 }
 
 #nav {
     grid-row: 2 / 3;
     background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     gap: 10px;
 }
 
 #tools {
     grid-row: 3 / 4;
     background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
 
 .sidebar-segment {
     height: 2vh;
     background-color: lightseagreen;
+    font-size: 1.5rem;
+    height: 2rem;
+    padding: 15px, 0;
 }
 
 #body {
