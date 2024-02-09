@@ -34,32 +34,60 @@ table { border-collapse: collapse; border-spacing: 0;}
     display: grid;
     grid-template-columns: 1fr 10fr 2fr 1fr 1fr 2fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+}
+
+#searchbar img {
+    height: 2.5rem;
+    width: auto;
+}
+
+#searchbar textarea {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    color: white;
+    height: 2.5rem;
+    width: auto;
+    font-size: 2rem;
 }
 
 #search-button {
     grid-column: 1 / 2;
-    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #search-field {
     grid-column: 2 / 3;
-    background-color: lightgray;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
 }
 
 #notification-bell {
     grid-column: 4 / 5;
-    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #user-icon {
     grid-column: 5 / 6;
-    background-color: lightcoral;
+    background-color: var(--background-color);
+    margin: 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #user-name {
     grid-column: 6 / 7;
-    background-color: lightcoral;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header {
@@ -109,6 +137,7 @@ table { border-collapse: collapse; border-spacing: 0;}
     color: white;
     align-items: center;
 }
+
 
 #dashboard {
     grid-row: 1 / 2;
