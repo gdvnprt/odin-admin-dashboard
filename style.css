@@ -23,7 +23,7 @@ table { border-collapse: collapse; border-spacing: 0;}
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 2fr 12fr;
+    grid-template-rows: 1fr 2fr 15fr;
     font-family: "roboto";
 }
 
@@ -316,12 +316,25 @@ table { border-collapse: collapse; border-spacing: 0;}
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    padding: 2vh 1vw;
-    gap: 15px;
 }
 
 .announcement-text {
-    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    margin: 0px 30px;
+    padding: 20px 0px;
+    border-bottom: 2px solid var(--background-color);
+    font-size: .9rem;
+}
+
+.announcement-text h3 {
+    grid-row: 1 / 2;
+}
+
+.announcement-text p {
+    grid-row: 2 / 3;
+    color: var(--background-color);
 }
 
 #trending {
