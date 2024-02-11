@@ -245,10 +245,8 @@ table { border-collapse: collapse; border-spacing: 0;}
     background-color: var(--background-color);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 7vh 1vw  1vh 1vw;
-    gap: 20px;
-    position: relative;
+    grid-template-rows: 1fr 6fr 1fr 6fr;
+    padding: 0vh 2vw 3vh 3vw;
 }
 
 #body h2 {
@@ -256,28 +254,38 @@ table { border-collapse: collapse; border-spacing: 0;}
 }
 
 #projects-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     position: relative;
-    left: 2vw;
 }
 
 #announcements-title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     position: relative;
-    left: 2vw;
 }
 
 #trending-title {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
     position: relative;
-    left: 61.5vw;
-    top: 40vh;
+}
+
+#body h2 {
+    position: relative;
+    top: 2vh;
+    left: 1vw;
 }
 
 #card-container {
     grid-column: 1 / 2;
+    grid-row: 2 / 5;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     gap: 25px;
     position: relative;
+    margin-right: 30px;
 }
 
 .card {
@@ -327,17 +335,10 @@ table { border-collapse: collapse; border-spacing: 0;}
     border-radius: 15px;
 }
 
-#right-container {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 7vh;
-    position: relative;
-}
-
 
 #announcements {
-    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
@@ -365,7 +366,8 @@ table { border-collapse: collapse; border-spacing: 0;}
 }
 
 #trending {
-    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
