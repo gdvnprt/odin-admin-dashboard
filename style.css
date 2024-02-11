@@ -226,6 +226,7 @@ table { border-collapse: collapse; border-spacing: 0;}
     grid-template-rows: 1fr;
     gap: 10px;
     align-items: center;
+    padding-left: 1vw;
 }
 
 .sidebar-segment img {
@@ -352,8 +353,12 @@ table { border-collapse: collapse; border-spacing: 0;}
     grid-template-rows: 1fr 3fr;
     margin: 0px 30px;
     padding: 20px 0px;
-    border-bottom: 2px solid var(--background-color);
     font-size: .9rem;
+    border-bottom: 2px solid var(--background-color);
+}
+
+.announcement-text:last-child {
+    border-bottom: 0px;
 }
 
 .announcement-text h3 {
